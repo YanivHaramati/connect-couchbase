@@ -15,13 +15,15 @@ var debug = require('debug')('Couchbase Session Store Example')
 var session = require('express-session');
 var CouchbaseStore = require('connect-couchbase')(session);
 var couchbaseStore = new CouchbaseStore({
-    bucket:"default",               //optional
-    host:"127.0.0.1:8091",          //optional
-    connectionTimeout: 2000,        //optional
-    operationTimeout: 2000,         //optional
-    cachefile: '',                  //optional
-    ttl: 86400,                     //optional
-    prefix: 'sess'                  //optional
+    username: "",                    // auth required
+    password: "",                    // auth required
+    bucket: "default",               //optional
+    host: "127.0.0.1:8091",          //optional
+    connectionTimeout: 2000,         //optional
+    operationTimeout: 2000,          //optional
+    cachefile: '',                   //optional
+    ttl: 86400,                      //optional
+    prefix: 'sess'                   //optional
 });
 
 /*

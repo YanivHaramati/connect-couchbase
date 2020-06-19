@@ -4,16 +4,23 @@
     "version": "0.2.10",
     "author": "Christopher Mina <christopher.mina@gmail.com>",
     "main": "./index.js",
-    "repository": { "type": "git", "url": "git@github.com:christophermina/connect-couchbase.git" },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:christophermina/connect-couchbase.git"
+    },
     "dependencies": {
         "debug": "*"
     },
-    "devDependencies": { "express-session": "^1.9.1" },
-    "engines": { "node": "*" },
+    "devDependencies": {
+        "express-session": "^1.9.1"
+    },
+    "engines": {
+        "node": "*"
+    },
     "bugs": {
         "url": "https://github.com/christophermina/connect-couchbase/issues"
     },
-    "scripts":{
-        "test":"node test.js"
+    "scripts": {
+        "test": "node test.js"
     }
 }
