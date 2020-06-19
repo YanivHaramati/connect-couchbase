@@ -9,6 +9,7 @@
         "url": "git@github.com:christophermina/connect-couchbase.git"
     },
     "dependencies": {
+        "couchbase": "^3.0.4",
         "debug": "*"
     },
     "devDependencies": {
